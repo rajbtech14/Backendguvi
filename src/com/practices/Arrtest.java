@@ -6,17 +6,16 @@ import java.util.Scanner;
 public class Arrtest {
 
 	public static void main(String[] args) {
-		Scanner obj = new Scanner(System.in);
-        int n = obj.nextInt();
+	     Scanner sc = new Scanner(System.in);  
+	       int num = sc.nextInt();
+	       int sum = 0;
+	       
+	       for (int i = num; num !=0; num= num/10){
+	        sum = num %10 + sum;
+	        
+      
+	       }System.out.println(sum*sum);
         
-        int [] arr= new int [n] ;
-        
-        Arrays.sort(arr);
-        
-        for (int i = 0; i < arr.length; i++) {
-			int j = arr[i];
-			System.out.println(j);
-		}
         
 	}
 
